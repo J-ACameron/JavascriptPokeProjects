@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Greeting Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokémon Greeting Card Generator</h1>
+        
+        <div class="form-group">
+            <label for="trainerName">Trainer Name:</label>
+            <input type="text" id="trainerName" placeholder="Enter your name">
+        </div>
+        
+        <div class="form-group">
+            <label for="starter">Choose Your Starter:</label>
+            <select id="starter">
+                <option value="">-- Select a Pokémon --</option>
+                <option value="Bulbasaur">Bulbasaur</option>
+                <option value="Charmander">Charmander</option>
+                <option value="Squirtle">Squirtle</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="rivalName">Rival Name:</label>
+            <input type="text" id="rivalName" placeholder="Enter rival's name">
+        </div>
+        
+        <button id="generateBtn" class="btn">Generate Card</button>
+        
+        <div id="card" class="card hidden">
+            <div class="card-content">
+                <p id="cardText"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

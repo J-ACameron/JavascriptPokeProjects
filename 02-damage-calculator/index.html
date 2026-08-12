@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokémon Damage Calculator</h1>
+        
+        <div class="calculator">
+            <div class="section">
+                <h2>Attacker</h2>
+                <div class="form-group">
+                    <label for="attackerName">Pokémon Name:</label>
+                    <input type="text" id="attackerName" placeholder="e.g., Pikachu">
+                </div>
+                <div class="form-group">
+                    <label for="attackerLevel">Level:</label>
+                    <input type="number" id="attackerLevel" value="50" min="1" max="100">
+                </div>
+                <div class="form-group">
+                    <label for="attackerAtk">Attack Stat:</label>
+                    <input type="number" id="attackerAtk" value="100" min="1">
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Move</h2>
+                <div class="form-group">
+                    <label for="moveName">Move Name:</label>
+                    <input type="text" id="moveName" placeholder="e.g., Thunderbolt">
+                </div>
+                <div class="form-group">
+                    <label for="movePower">Base Power:</label>
+                    <input type="number" id="movePower" value="90" min="1">
+                </div>
+                <div class="form-group">
+                    <label for="moveType">Type:</label>
+                    <select id="moveType">
+                        <option value="normal">Normal</option>
+                        <option value="fire">Fire</option>
+                        <option value="water">Water</option>
+                        <option value="grass">Grass</option>
+                        <option value="electric">Electric</option>
+                        <option value="ice">Ice</option>
+                        <option value="fighting">Fighting</option>
+                        <option value="poison">Poison</option>
+                        <option value="ground">Ground</option>
+                        <option value="flying">Flying</option>
+                        <option value="psychic">Psychic</option>
+                        <option value="bug">Bug</option>
+                        <option value="rock">Rock</option>
+                        <option value="ghost">Ghost</option>
+                        <option value="dragon">Dragon</option>
+                        <option value="dark">Dark</option>
+                        <option value="steel">Steel</option>
+                        <option value="fairy">Fairy</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Defender</h2>
+                <div class="form-group">
+                    <label for="defenderName">Pokémon Name:</label>
+                    <input type="text" id="defenderName" placeholder="e.g., Charizard">
+                </div>
+                <div class="form-group">
+                    <label for="defenderDef">Defense Stat:</label>
+                    <input type="number" id="defenderDef" value="100" min="1">
+                </div>
+                <div class="form-group">
+                    <label for="defenderType">Type:</label>
+                    <select id="defenderType">
+                        <option value="normal">Normal</option>
+                        <option value="fire">Fire</option>
+                        <option value="water">Water</option>
+                        <option value="grass">Grass</option>
+                        <option value="electric">Electric</option>
+                        <option value="ice">Ice</option>
+                        <option value="fighting">Fighting</option>
+                        <option value="poison">Poison</option>
+                        <option value="ground">Ground</option>
+                        <option value="flying">Flying</option>
+                        <option value="psychic">Psychic</option>
+                        <option value="bug">Bug</option>
+                        <option value="rock">Rock</option>
+                        <option value="ghost">Ghost</option>
+                        <option value="dragon">Dragon</option>
+                        <option value="dark">Dark</option>
+                        <option value="steel">Steel</option>
+                        <option value="fairy">Fairy</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <button id="calculateBtn" class="btn">Calculate Damage</button>
+        
+        <div id="result" class="result hidden">
+            <h2>Result</h2>
+            <p id="damageText"></p>
+            <p id="effectivenessText"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

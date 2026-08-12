@@ -1,0 +1,9 @@
+.silhouette {
+    filter: brightness(0);
+}
+
+#pokemon-img {
+    transition: filter 0s;
+}
+
+body { background: red; } 

@@ -1,0 +1,20 @@
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    align-items: center;
+    background-color: lightskyblue;
+}
+
+
+
+.card{
+    color: white;
+    background-image: url('https://t3.ftcdn.net/jpg/03/16/55/02/360_F_316550206_zCjSYiLsDuFSwJt29NEEHp59D5Cxj0fZ.jpg');
+    border: 3px solid yellow;
+    border-radius: 12px;
+    width: 300px;
+    height: 400px;
+}

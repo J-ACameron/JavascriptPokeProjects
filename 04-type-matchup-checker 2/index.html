@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Type Checker!!!</h1>
+
+
+<label for="atkType">Attacking Move Type</label>
+<select id="atkType">
+    <option value="" disabled selected>Move Type</option>
+    <option value="fire">Fire</option>
+    <option value="water">Water</option>
+    <option value="grass">Grass</option>
+    <option value="rock">Rock</option>
+    <option value="flying">Flying</option>
+</select>
+
+
+<label for="defType1">Defending Pkmn Types</label>
+<select id="defType1">
+    <option value="" disabled selected>Primary Type</option>
+    <option value="fire">Fire</option>
+    <option value="water">Water</option>
+    <option value="grass">Grass</option>
+    <option value="rock">Rock</option>
+    <option value="flying">Flying</option>
+</select>
+
+<select id="defType2">
+    <option value="">None</option>
+    <option value="fire">Fire</option>
+    <option value="water">Water</option>
+    <option value="grass">Grass</option>
+    <option value="rock">Rock</option>
+    <option value="flying">Flying</option>
+</select>
+
+<button id="checkBtn">Check Matchup</button>
+<p id="output"></p>
+
+<script src="script.js"></script>
+</body>
+</html>

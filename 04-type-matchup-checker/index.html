@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04 Type Matchup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Type Matchup Checker</h1>
+
+<div class="attack" id="attack">
+        <h3>Attacking Type</h3>
+
+<select id="aType1">
+    <option value="fighting">Fighting</option>
+    <option value="ice">Ice</option>
+    <option value="flying">Flying</option>
+    <option value="normal">Normal</option>
+    <option value="fire">Fire</option>
+    <option value="water">Water</option>
+    <option value="electric">Electric</option>
+    <option value="grass">Grass</option>
+    <option value="poison">Poison</option>
+    <option value="ground">Ground</option>
+    <option value="psychic">Psychic</option>
+    <option value="bug">Bug</option>
+    <option value="rock">Rock</option>
+    <option value="ghost">Ghost</option>
+    <option value="dragon">Dragon</option>
+    <option value="dark">Dark</option>
+    <option value="steel">Steel</option>
+    <option value="fairy">Fairy</option>
+</select>
+</div>
+
+<div class="defending" id="defending"> 
+    <h3>Defending Type</h3>
+<select id="dType1">
+    <option value="fighting">Fighting</option>
+    <option value="ice">Ice</option>
+    <option value="flying">Flying</option>
+    <option value="normal">Normal</option>
+    <option value="fire">Fire</option>
+    <option value="water">Water</option>
+    <option value="electric">Electric</option>
+    <option value="grass">Grass</option>
+    <option value="poison">Poison</option>
+    <option value="ground">Ground</option>
+    <option value="psychic">Psychic</option>
+    <option value="bug">Bug</option>
+    <option value="rock">Rock</option>
+    <option value="ghost">Ghost</option>
+    <option value="dragon">Dragon</option>
+    <option value="dark">Dark</option>
+    <option value="steel">Steel</option>
+    <option value="fairy">Fairy</option>
+    <option value="none">None</option>
+</select>
+
+<select id="dType2">
+    <option value="fighting">Fighting</option>
+    <option value="ice">Ice</option>
+    <option value="flying">Flying</option>
+    <option value="normal">Normal</option>
+    <option value="fire">Fire</option>
+    <option value="water">Water</option>
+    <option value="electric">Electric</option>
+    <option value="grass">Grass</option>
+    <option value="poison">Poison</option>
+    <option value="ground">Ground</option>
+    <option value="psychic">Psychic</option>
+    <option value="bug">Bug</option>
+    <option value="rock">Rock</option>
+    <option value="ghost">Ghost</option>
+    <option value="dragon">Dragon</option>
+    <option value="dark">Dark</option>
+    <option value="steel">Steel</option>
+    <option value="fairy">Fairy</option>
+    <option value="none">None</option>
+</select>
+</div>
+
+
+<button onclick="checkMatchup()">Type Matchup</button>
+
+<p id="results"></p>
+
+<script src="script.js"></script>
+
+</body>

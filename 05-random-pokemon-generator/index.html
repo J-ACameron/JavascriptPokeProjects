@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05 Random Mon Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Generate a Random Pokemon Card</h2>
+
+<button onclick="generateCard()">Generate</button>
+
+
+<div class="card" id="card">
+    <div class="top">
+        <span id="name">Name</span>
+        <span id="type">Type</span>
+        <span id="level">Level</span>
+    </div>
+    <img id="img" src="" alt="Image" width="300" height="220">
+<div class="middle">
+    <span id="hp">HP</span>
+    <span id="attack">Attack</span>
+</div>
+<div class="bottom">
+    <span id="defense">Defense</span>
+    <span id="speed">Speed</span>
+    </div>
+</div>
+
+<button onclick="saveCard()">Save Card</button>
+<button onclick="viewCollection()">View Collection</button>
+
+<p id="results"></p>
+<script src="script.js"></script>
+
+</body>

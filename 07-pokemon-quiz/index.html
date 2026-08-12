@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="difficultyScreen" class="screen">
+    <label for="difficulty">Select a difficuly</label>
+    <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+    </select>
+    <button id="difficultyBtn">Confirm</button>
+</div>
+
+<div id="questionScreen" class="screen hidden">
+    <p id="currentQuestion"></p>
+
+    <p>Score: <span id="score">0</span></p>
+    <p>Time Left: <span id="countdown">15</span></p>
+    <div id="answerBox">  
+    </div>
+</div>
+
+<div id="resultScreen" class="screen hidden">
+    <p id="result"></p><!-- User see if theyre right or wrong-->
+    <div id="reviewBox"></div>
+    <p id="userAnswers"></p>
+
+    <button id="retryBtn">Retry?</button>
+</div>
+    
+
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon API Intro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokémon API Intro</h1>
+        <p class="subtitle">Fetch a Pokémon by ID (1-151)</p>
+        
+        <div class="input-group">
+            <input 
+                type="number" 
+                id="pokemonId" 
+                placeholder="Enter Pokémon ID" 
+                min="1" 
+                max="151"
+                value="1"
+            >
+            <button id="fetchBtn" class="btn">Fetch Pokémon</button>
+        </div>
+        
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+        
+        <div id="error" class="error hidden"></div>
+        
+        <div id="pokemonInfo" class="pokemon-info hidden">
+            <img id="sprite" src="" alt="Pokémon sprite">
+            <h2 id="name"></h2>
+            <div id="types" class="types"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
